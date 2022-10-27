@@ -1,24 +1,5 @@
-# README
+<h1 align="center">Day 24 of The Hacking Project: Relationship between databases</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here is exercise 1 in Ruby on Rails from day 23 of The Hacking Project: The Gossip Project !
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<h2 align="center">🎉 Day 9 of the Full Stack training 🎉</h2>
