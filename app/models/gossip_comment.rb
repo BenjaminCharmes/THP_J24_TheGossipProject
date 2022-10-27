@@ -1,2 +1,0 @@
-class GossipComment < ApplicationRecord
-end
