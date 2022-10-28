@@ -25,9 +25,9 @@ end
   Tag.create!(title: Faker::Book.genre)
 end
 
-# gossips.each do |gossip|
-#   GossipTag.create!(gossip_id: gossip.id, tag_id: rand(1..10))
-# end
+gossips.each do |gossip|
+  GossipTag.create!(gossip_id: gossip.id, tag_id: rand(1..10))
+end
 
 10.times do
   PrivateMessage.create!(content: Faker::Lorem.sentence(word_count: 10), sender_id: rand(1..10))

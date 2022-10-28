@@ -46,6 +46,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_27_165342) do
     t.index ["user_id"], name: "index_gossip_likes_on_user_id"
   end
 
+  create_table "gossip_tags", force: :cascade do |t|
+    t.integer "gossip_id"
+    t.integer "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["gossip_id"], name: "index_gossip_tags_on_gossip_id"
+    t.index ["tag_id"], name: "index_gossip_tags_on_tag_id"
+  end
+
   create_table "gossips", force: :cascade do |t|
     t.string "title"
     t.text "content"
@@ -53,13 +62,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_27_165342) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_gossips_on_user_id"
-  end
-
-  create_table "gossips_tags", id: false, force: :cascade do |t|
-    t.integer "gossip_id", null: false
-    t.integer "tag_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "private_messages", force: :cascade do |t|
